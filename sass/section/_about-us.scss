@@ -38,8 +38,21 @@
     }
 }
 .advantages-list{
+    width: 525px;
+    li{
+        
+    }
     li:not(:last-child){
         margin-bottom: 30px;
+    }
+    li:before{
+        content: "";
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        background-image: url("/img/icon/eclipse.svg");
+        margin-right: 13px;
+        vertical-align: middle;
     }
 }
 .about-us__wrapper-link {

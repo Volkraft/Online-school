@@ -376,8 +376,20 @@ select:-webkit-autofill:focus {
   margin-bottom: 11px;
 }
 
+.advantages-list {
+  width: 525px;
+}
 .advantages-list li:not(:last-child) {
   margin-bottom: 30px;
+}
+.advantages-list li:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url("/img/icon/eclipse.svg");
+  margin-right: 13px;
+  vertical-align: middle;
 }
 
 .contact-links__item {
