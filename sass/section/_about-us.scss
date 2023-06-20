@@ -1,0 +1,47 @@
+.about-us {
+    padding-bottom: 36px;
+    padding-top: 60px;
+
+}
+.aims {
+
+}
+.about-us__content {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    column-gap: 29px;
+    
+    &--second{
+        flex-direction: row-reverse;
+    }
+}
+.about-us__img {
+    width: 600px;
+    height: 605px;
+}
+.about-us__info {
+    width: 601px;
+}
+.about-us__wrapper-title {
+    margin-bottom: 33px;
+
+}
+.about-us__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 41px;
+
+    p:not(:last-child){
+        margin-bottom: 11px;
+    }
+}
+.advantages-list{
+    li:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+.about-us__wrapper-link {
+
+}

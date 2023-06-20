@@ -1,0 +1,15 @@
+.wrapper-action-btn {
+    width: 292px;
+    height: 69px;
+    background-color: $colorCardLinks;
+    box-shadow: 0px 20px 24px -13px rgba(247, 180, 14, 0.38);
+    border-radius: 114px;
+}
+.action-btn {
+    padding-left: 97px;
+    padding-right: 97px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 69px;
+    color: $colorTextSlider !important;
+}
