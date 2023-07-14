@@ -19,9 +19,23 @@
     font-weight: 700;
     font-size: 57px;
     line-height: 1.2;
+    color: $colorCardLinks;
+    &--black{
+        color: $colorContextText;
+    }
 }
 .section-title__color-part{
     &--color-one{
         color: $colorSectionTitle;
+    }
+}
+.title__color-part{
+    color: $colorContextText;
+}
+.wrapper-section-title{
+    margin-bottom: 55px;
+    &--block{
+        max-width: 1165px;
+        margin: 0 auto;
     }
 }

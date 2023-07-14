@@ -1,0 +1,88 @@
+.wrapper-banner{
+    position: relative;
+    width: 1258px;
+    margin: 0 auto 170px;
+}
+.banner{
+    position: relative;
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    width: 1258px;
+    overflow: hidden;
+    background-color: $colorCardLinks;
+    border-radius: 47px;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 35%;
+        display: inline-block;
+        width: 291px;
+        height: 143px;
+        background-image: url(/img/banner/eclipse-shadow.svg);
+        background-size: cover;
+    }
+}
+.banner__wrapper-title {
+    padding-bottom: 27px;
+}
+.banner__title {
+    color: $colorTextSlider;
+    font-size: 57px;
+    font-weight: 700;
+}
+.banner__description {
+    width: 905px;
+    padding-bottom: 43px;
+    color: $colorTextSlider;
+    font-size: 23px;
+    line-height: 30px;
+}
+.banner__circles {
+    position: absolute;
+    bottom: -29%;
+    right: -9%;
+    width: 384.931px;
+    height: 384.931px;
+}
+.banner__circles-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &--big{
+        width: 384.931px;
+        height: 384.931px;
+    }
+    &--medium{
+        width: 263.803px;
+        height: 263.803px;
+    }
+    &--small{
+        width: 137.107px;
+        height: 137.107px;
+    }
+}
+.banner__icon{
+    width: 150px;
+    position: absolute;
+
+    &--first{
+        bottom: 35%;
+        right: -6%;
+        filter: drop-shadow(0 0 20px #FF668A);
+    }
+    &--second{
+        bottom: 40%;
+        right: 10%;
+        filter: drop-shadow(0 0 20px #FFFFFF);
+    }
+    &--last{
+        bottom: 0;
+        right: 15%;
+        filter: drop-shadow(0 0 20px #B0EFFF);
+    }
+}

@@ -5,4 +5,8 @@
     text-decoration-line: underline;
     color: $colorSectionTitle !important;
     text-underline-offset: 4px;
+    &--card{
+        color: $colorCardLinks !important;
+
+    }
 }

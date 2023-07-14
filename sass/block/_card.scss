@@ -1,0 +1,101 @@
+.card-activities {
+    min-height: 540px;
+    min-width: 360px;
+    max-width: 360px;
+    &:hover{
+        .card-activities__fake-block{
+            transform: scale(1.1);
+        }
+        .card-activities__shadow{
+            transform: translate(100%, 100%);
+            &--third{
+                transition: transform 0.7s, background-color 1s 0.5s;
+                background-color: transparent;
+            }
+            &--second{
+                transition: transform 0.7s 0.3s, background-color 1s 0.5s;
+                background-color: transparent;
+            }
+            &--first{
+                transition: transform 0.7s 0.6s;
+            }
+        }
+    }
+}
+.card-activities__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 6px 30px 27px;
+    position: relative;
+    z-index: 2;
+    border-radius: 32px;
+
+    &>*{
+        flex-shrink: 0;
+    }
+}
+.card-activites__number {
+    color: rgba(57, 57, 57, 0.25);
+    font-size: 86px;
+    font-weight: 500;
+}
+.card-activites__item{
+    min-height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-activities__title {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.card-activities__subtitle {
+    color: #5A5959;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+.card-activities__description {
+    color: #6E6E6E;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 32px;
+}
+.card-activities__fake-block {
+    height: 100%;
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 0 ;
+    z-index: -1;
+    transition: transform 0.5s;
+    border-radius: 32px;
+    overflow: hidden;
+}
+.card-activities__circles {
+    margin-left: -20px;
+}
+.card-activities__shadow{
+    position: absolute;
+    left: -100%;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    &--first{ 
+    background-color: rgba(247, 181, 14, 0.247);
+    transition: transform 0.7s;
+    }
+    &--second{ 
+    background-color: rgba(255, 102, 138, 0.247);
+    transition: transform 0.7s 0.3s, background-color 1s;
+    }
+    &--third{ 
+    background-color: rgba(0, 190, 237, 0.247);
+    transition: transform 0.7s 0.6s, background-color 1s 0.5s;
+    }
+}

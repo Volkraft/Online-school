@@ -1,0 +1,26 @@
+.our-courses{
+    padding-top: 115px;
+    padding-bottom: 115px;
+    background: rgb(254,243,216);
+    background: -moz-linear-gradient(250deg, rgba(254,243,216,1) 0%, rgba(255,230,169,1) 50%, rgba(255,244,217,1) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(254,243,216,1) 0%, rgba(255,230,169,1) 50%, rgba(255,244,217,1) 100%);
+    background: linear-gradient(250deg, rgba(254,243,216,1) 0%, rgba(255,230,169,1) 50%, rgba(255,244,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef3d8",endColorstr="#fff4d9",GradientType=1);
+    border-radius: 50% 50% 50% 50% / 10% 10% 10% 10%;
+
+    
+    .banner{
+        margin: 0 auto 170px;
+    }
+    &__item-block{
+        max-width: 1165px;  
+        margin: 0 auto;
+    }
+    &__row-cards{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 78px;
+        column-gap: 40px;
+    }
+}
