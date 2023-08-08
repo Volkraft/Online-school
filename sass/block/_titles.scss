@@ -36,6 +36,14 @@
     margin-bottom: 55px;
     &--block{
         max-width: 1165px;
-        margin: 0 auto;
+        margin: 0 auto 60px;
     }
+}
+.wrapper-block-title{
+    margin-bottom: 25px;
+}
+.block-title{
+    color: $colorContextText;
+    font-size: 24px;   
+    font-weight: 700;
 }
