@@ -1,0 +1,18 @@
+.subscribe{
+    position: relative;
+    input[type=email]{
+        padding: 14px 11px ;
+        border-radius: 30px;
+        background-color: $colorTextSlider;
+        filter: drop-shadow(0px 8px 24px rgba(226, 192, 117, 0.6));
+    }
+    input[type=submit]{
+        position: absolute;
+        top: 0;
+        right: 19px;
+        background-color: #00BDED;
+        color: $colorTextSlider;
+        border-radius: 30px;
+        padding: 14px 20px;
+    }
+}
