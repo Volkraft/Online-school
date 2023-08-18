@@ -31,6 +31,10 @@
         width: 562px;
         justify-content: space-between;
     }
+    li:hover {
+        text-decoration: underline;
+    }
+
 }
 .contact-links{
     padding-bottom: 5px;
