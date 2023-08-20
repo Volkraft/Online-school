@@ -619,7 +619,7 @@ select:-webkit-autofill:focus {
   display: inline-block;
   width: 291px;
   height: 143px;
-  background-image: url(/img/banner/eclipse-shadow.svg);
+  background-image: url(/img/about-us/eclipse-shadow.png);
   background-size: cover;
 }
 
