@@ -17,3 +17,82 @@ $('.reviews-slider').slick({
     </svg>    
     </div>`,
     });
+    // gsap
+    const timelinePreview = gsap.timeline({})
+
+    timelinePreview.from('.preview__info',{
+        x:-400,
+        duration:2,
+        opacity:0,
+        ease:"back.out(1.5)",
+    })
+
+    gsap.from('#about-us__info-1',{
+        x:400,
+        opacity:0,
+        scrollTrigger:{
+                // markers:true,
+                trigger:'#about-us__info-1',  
+                start:'top 80%',
+                end:'bottom 80%',
+                opacity:1,
+                scrub:1.5, 
+                toggleActions:'play reverse play reverse',
+                }
+    })
+
+    gsap.from('#about-us__info-2',{
+        x:-400,
+        opacity:0,
+        scrollTrigger:{
+                // markers:true,
+                trigger:'#about-us__info-2',  
+                start:'top 80%',
+                end:'bottom 80%',
+                opacity:1,
+                scrub:1.5, 
+                toggleActions:'play reverse play reverse',
+                }
+    })
+
+        gsap.from('.card-activities--first',{
+        stagger:0.3,
+        opacity:0,
+        y:200,
+        scrollTrigger:{
+            // markers:true,
+            trigger: '.card-activities--first',
+            start: 'top 70%',
+            end:'20% 50%',
+            scrub:1.5,
+            toggleActions: 'play none none reverse',
+        }
+    })
+
+    gsap.from('.card-activities--second',{
+        stagger:0.3,
+        opacity:0,
+        y:200,
+        scrollTrigger:{
+            // markers:true,
+            trigger: '.card-activities--second',
+            start: 'top 90%',
+            end:'30% 60%',
+            scrub:1.5,
+            toggleActions: 'play none none reverse',
+        }
+    })
+
+    gsap.from('.contacts__info',{
+        x:-400,
+        opacity:0,
+        scrollTrigger:{
+                // markers:true,
+                trigger:'.contacts__info',  
+                start:'top 80%',
+                end:'bottom 80%',
+                opacity:1,
+                scrub:1.5, 
+                toggleActions:'play reverse play reverse',
+                }
+    })
