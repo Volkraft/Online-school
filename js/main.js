@@ -96,3 +96,95 @@ $('.reviews-slider').slick({
                 toggleActions:'play reverse play reverse',
                 }
     })
+
+    function parallax(){
+        const preview = document.querySelector('.preview');
+        const initialX = preview.offsetLeft + preview.offsetWidth / 2;
+        const initialY = preview.offsetTop + preview.offsetHeight / 2;
+    
+        document.addEventListener('mousemove', function(event) {
+        
+            const mouseX = event.clientX - initialX;
+            const mouseY = event.clientY - initialY;
+        
+        gsap.to(
+        '#icon-bottle', 
+        {
+        x: mouseX * 0.05, 
+        y: mouseY * 0.05, 
+        ease: 'power2.out' 
+        },);
+
+        gsap.to(
+            '#icon-moon', 
+            {
+            x: mouseX * 0.05, 
+            y: mouseY * 0.05, 
+            ease: 'power2.out' 
+            },);
+
+        gsap.to(
+            '#icon-hat', 
+            {
+            x: mouseX * 0.05, 
+            y: mouseY * 0.05, 
+            ease: 'power2.out' 
+            },);
+
+        gsap.to(
+            '.preview__avatar-img', 
+            {
+            x: mouseX * 0.03, 
+            y: mouseY * 0.03, 
+            ease: 'power2.out' 
+            },);
+
+        gsap.to(
+            '.preview__avatar-wrapper-circles', 
+            {
+            x: mouseX * 0.01, 
+            y: mouseY * 0.01, 
+            ease: 'power2.out' 
+            },);
+                
+        gsap.to(
+        '.preview__avatar-cirlces--big',
+        {
+            rotation: 360,
+            duration: 10,
+            repeat: -1,
+            ease: "linear"
+            },'<');
+
+            gsap.to(
+                '.preview__avatar-cirlces--meduim',
+                {
+                    rotation: -360,
+                    duration: 10,
+                    repeat: -1,
+                    ease: "linear"
+                    },'<');
+
+                    gsap.to(
+                        '.preview__avatar-cirlces--small',
+                        {
+                            rotation: 360,
+                            duration: 10,
+                            repeat: -1,
+                            ease: "linear"
+                            },'<');
+
+                            gsap.to(
+                                '.preview__avatar-cirlces--very-small',
+                                {
+                                    rotation: -360,
+                                    duration: 10,
+                                    repeat: -1,
+                                    ease: "linear"
+                                    },'<');
+    })
+        
+}
+parallax()
+
+    

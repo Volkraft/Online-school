@@ -33,10 +33,37 @@
     width: 647px;
     height: 589px;
 }
-// .preview__avatar-img img{
-//     width: 647px;
-//     height: 589px;
-// }
+.preview__avatar-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.preview__avatar-wrapper-circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.preview__avatar-cirlces{
+    position: absolute;
+    top: 0;
+    left: 0;
+    &--big{
+        width: 100%;
+    }
+    &--meduim{
+        width: 77%;
+        transform: translate(15%, 15%);
+    }
+    &--small{
+        width: 57%;
+        transform: translate(38%, 38%);
+    }
+    &--very-small{
+        width: 44%;
+        transform: translate(64%, 64%);
+    }
+}
 .preview__trends {
     position: absolute;
     &--bottle{
