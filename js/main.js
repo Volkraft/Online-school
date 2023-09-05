@@ -146,45 +146,93 @@ $('.reviews-slider').slick({
             y: mouseY * 0.01, 
             ease: 'power2.out' 
             },);
-                
-        gsap.to(
-        '.preview__avatar-cirlces--big',
+    })
+        
+}
+parallax()
+function rotatePreview(){
+    gsap.to(
+'.preview__avatar-cirlces--big',
+{
+    rotation: 360,
+    duration: 10,
+    repeat: -1,
+    ease: "linear"
+    },'<');
+
+gsap.to(
+    '.preview__avatar-cirlces--meduim',
+    {
+        rotation: -360,
+        duration: 10,
+        repeat: -1,
+        ease: "linear"
+        },'<');
+
+gsap.to(
+    '.preview__avatar-cirlces--small',
+    {
+        rotation: 360,
+        duration: 10,
+        repeat: -1,
+        ease: "linear"
+        },'<');
+
+gsap.to(
+    '.preview__avatar-cirlces--very-small',
+    {
+        rotation: -360,
+        duration: 10,
+        repeat: -1,
+        ease: "linear"
+        },'<');
+}
+rotatePreview()
+
+function rotateAboutUsFirst(){
+    gsap.to(
+        '.about-us__avatar-cirlces--large',
         {
             rotation: 360,
             duration: 10,
             repeat: -1,
             ease: "linear"
             },'<');
-
-            gsap.to(
-                '.preview__avatar-cirlces--meduim',
-                {
-                    rotation: -360,
-                    duration: 10,
-                    repeat: -1,
-                    ease: "linear"
-                    },'<');
-
-                    gsap.to(
-                        '.preview__avatar-cirlces--small',
-                        {
-                            rotation: 360,
-                            duration: 10,
-                            repeat: -1,
-                            ease: "linear"
-                            },'<');
-
-                            gsap.to(
-                                '.preview__avatar-cirlces--very-small',
-                                {
-                                    rotation: -360,
-                                    duration: 10,
-                                    repeat: -1,
-                                    ease: "linear"
-                                    },'<');
-    })
         
+    gsap.to(
+        '.about-us__avatar-cirlces--big',
+        {
+            rotation: 360,
+            duration: 10,
+            repeat: -1,
+            ease: "linear"
+            },'<');
+        
+        gsap.to(
+            '.about-us__avatar-cirlces--meduim',
+            {
+                rotation: -360,
+                duration: 10,
+                repeat: -1,
+                ease: "linear"
+                },'<');
+        
+        gsap.to(
+            '.about-us__avatar-cirlces--small',
+            {
+                rotation: 360,
+                duration: 10,
+                repeat: -1,
+                ease: "linear"
+                },'<');
+        
+        gsap.to(
+            '.about-us__avatar-cirlces--very-small',
+            {
+                rotation: -360,
+                duration: 10,
+                repeat: -1,
+                ease: "linear"
+                },'<');
 }
-parallax()
-
-    
+rotateAboutUsFirst()

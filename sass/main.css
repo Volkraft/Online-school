@@ -351,9 +351,48 @@ select:-webkit-autofill:focus {
   flex-direction: row-reverse;
 }
 
-.about-us__img {
-  width: 600px;
-  height: 605px;
+.about-us__avatar {
+  position: relative;
+  width: 590px;
+  height: 590px;
+}
+
+.about-us__avatar-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-us__avatar-wrapper-circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.about-us__avatar-cirlces {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-us__avatar-cirlces--large {
+  width: 100%;
+}
+.about-us__avatar-cirlces--big {
+  width: 77%;
+  transform: translate(15%, 15%);
+}
+.about-us__avatar-cirlces--meduim {
+  width: 57%;
+  transform: translate(38%, 38%);
+}
+.about-us__avatar-cirlces--small {
+  width: 44%;
+  transform: translate(64%, 64%);
+}
+.about-us__avatar-cirlces--very-small {
+  width: 30%;
+  transform: translate(115%, 115%);
 }
 
 .about-us__info {

@@ -15,9 +15,46 @@
         flex-direction: row-reverse;
     }
 }
-.about-us__img {
-    width: 600px;
-    height: 605px;
+.about-us__avatar {
+    position: relative;
+    width: 590px;
+    height: 590px;
+}
+.about-us__avatar-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about-us__avatar-wrapper-circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.about-us__avatar-cirlces{
+    position: absolute;
+    top: 0;
+    left: 0;
+    &--large{
+        width: 100%;
+
+    }
+    &--big{
+        width: 77%;  
+        transform: translate(15%, 15%); 
+    }
+    &--meduim{
+        width: 57%;
+        transform: translate(38%, 38%); 
+    }
+    &--small{
+        width: 44%;
+        transform: translate(64%, 64%);  
+    }
+    &--very-small{
+        width: 30%;
+        transform: translate(115%, 115%); 
+    }
 }
 .about-us__info {
     width: 601px;
