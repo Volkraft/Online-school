@@ -350,6 +350,23 @@ select:-webkit-autofill:focus {
 .about-us__content--second {
   flex-direction: row-reverse;
 }
+.about-us__content--second .about-us__avatar-cirlces {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-us__content--second .about-us__avatar-cirlces--big {
+  width: 100%;
+  transform: translate(1%, 6%);
+}
+.about-us__content--second .about-us__avatar-cirlces--meduim {
+  width: 75%;
+  transform: translate(18%, 25%);
+}
+.about-us__content--second .about-us__avatar-cirlces--small {
+  width: 59%;
+  transform: translate(36%, 45%);
+}
 
 .about-us__avatar {
   position: relative;

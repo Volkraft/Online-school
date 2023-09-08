@@ -12,7 +12,29 @@
     column-gap: 29px;
     
     &--second{
+
         flex-direction: row-reverse;
+        
+        .about-us__avatar-cirlces{
+            position: absolute;
+            top: 0;
+            left: 0;
+        
+        &--big{
+            width: 100%; 
+            transform: translate(1%, 6%);
+        }
+
+        &--meduim{
+            width: 75%;
+            transform: translate(18%, 25%);
+        }
+
+        &--small{
+            width: 59%;
+            transform: translate(36%, 45%);
+        }
+    }
     }
 }
 .about-us__avatar {
@@ -37,7 +59,6 @@
     left: 0;
     &--large{
         width: 100%;
-
     }
     &--big{
         width: 77%;  
