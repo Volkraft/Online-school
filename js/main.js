@@ -194,7 +194,7 @@ function rotateAboutUsFirst(){
         '.about-us__avatar-cirlces--large',
         {
             rotation: 360,
-            duration: 10,
+            duration: 30,
             repeat: -1,
             ease: "linear"
             },'<');
@@ -203,7 +203,7 @@ function rotateAboutUsFirst(){
         '.about-us__avatar-cirlces--big',
         {
             rotation: 360,
-            duration: 10,
+            duration: 30,
             repeat: -1,
             ease: "linear"
             },'<');
@@ -212,7 +212,7 @@ function rotateAboutUsFirst(){
             '.about-us__avatar-cirlces--meduim',
             {
                 rotation: -360,
-                duration: 10,
+                duration: 30,
                 repeat: -1,
                 ease: "linear"
                 },'<');
@@ -221,7 +221,7 @@ function rotateAboutUsFirst(){
             '.about-us__avatar-cirlces--small',
             {
                 rotation: 360,
-                duration: 10,
+                duration: 30,
                 repeat: -1,
                 ease: "linear"
                 },'<');
@@ -230,7 +230,7 @@ function rotateAboutUsFirst(){
             '.about-us__avatar-cirlces--very-small',
             {
                 rotation: -360,
-                duration: 10,
+                duration: 30,
                 repeat: -1,
                 ease: "linear"
                 },'<');
