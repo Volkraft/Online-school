@@ -318,21 +318,21 @@ select:-webkit-autofill:focus {
   height: 132px;
   left: -37px;
   top: 27px;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 189, 237, 0.5) 0%, rgba(246, 255, 254, 0) 100%);
+  filter: drop-shadow(0 0 20px rgba(0, 189, 237, 0.5));
 }
 .preview__trends--moon {
   height: 158px;
   width: 110px;
   right: 32px;
   top: 138px;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 196, 90, 0.35) 0%, rgba(255, 209, 126, 0) 100%);
+  filter: drop-shadow(0 0 20px rgba(160, 132, 79, 0.35));
 }
 .preview__trends--hat {
   width: 163px;
   height: 119px;
   left: 68px;
   bottom: -68px;
-  background: radial-gradient(41.11% 41.11% at 50% 50%, rgba(255, 87, 127, 0.55) 0%, rgba(255, 238, 252, 0) 100%);
+  filter: drop-shadow(0 0 20px rgba(255, 87, 127, 0.55));
 }
 
 .about-us {
@@ -436,14 +436,19 @@ select:-webkit-autofill:focus {
 .advantages-list li:not(:last-child) {
   margin-bottom: 30px;
 }
-.advantages-list li:before {
-  content: "";
+
+.advantages-list__item {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+.advantages-list__marker {
   display: inline-block;
+  flex-shrink: 0;
   width: 17px;
   height: 17px;
-  background-image: url("./img/icon/eclipse.svg");
-  margin-right: 13px;
-  vertical-align: middle;
+  background-image: url("/img/about-us/eclipse.svg");
 }
 
 .our-courses {
@@ -700,16 +705,12 @@ select:-webkit-autofill:focus {
   background-color: #F5B920;
   border-radius: 47px;
 }
-.banner::before {
-  content: "";
+
+.banner__shadow-circles {
   position: absolute;
-  bottom: 0;
+  bottom: -35%;
   right: 35%;
   display: inline-block;
-  width: 291px;
-  height: 143px;
-  background-image: url(/img/about-us/eclipse-shadow.png);
-  background-size: cover;
 }
 
 .banner__wrapper-title {

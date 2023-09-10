@@ -146,6 +146,61 @@ $('.reviews-slider').slick({
             y: mouseY * 0.01, 
             ease: 'power2.out' 
             },);
+            gsap.to(
+                '.banner__icon--first', 
+                {
+                x: mouseX * 0.02, 
+                y: mouseY * 0.02, 
+                ease: 'power2.out' 
+                },'<');
+        
+    gsap.to(
+                '.banner__icon--second', 
+                {
+                x: mouseX * 0.03, 
+                y: mouseY * 0.03, 
+                ease: 'power2.out' 
+                },'<');
+        
+    gsap.to(
+                '.banner__icon--last', 
+                {
+                x: mouseX * 0.02, 
+                y: mouseY * 0.02, 
+                ease: 'power2.out' 
+                },'<');
+        
+    gsap.to(
+                '.banner__circles-item--big', 
+                {
+                x: mouseX * 0.03, 
+                y: mouseY * 0.03, 
+                ease: 'power2.out' 
+                },'<');
+        
+    gsap.to(
+                '.banner__circles-item--medium', 
+                {
+                x: mouseX * 0.02, 
+                y: mouseY * 0.02, 
+                ease: 'power2.out' 
+                },'<');
+        
+    gsap.to(
+                '.banner__circles-item--small', 
+                {
+                x: mouseX * 0.01, 
+                y: mouseY * 0.01, 
+                ease: 'power2.out' 
+                },'<');
+        
+    gsap.to(
+                '.banner__shadow-circles', 
+                {
+                x: mouseX * 0.03, 
+                y: mouseY * 0.03, 
+                ease: 'power2.out' 
+                },'<');
     })
         
 }
