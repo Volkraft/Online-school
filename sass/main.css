@@ -246,6 +246,16 @@ select:-webkit-autofill:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef3d8",endColorstr="#fff4d9",GradientType=1);
   border-radius: 26% 26% 48% 52%/0% 0% 15% 15%;
 }
+@media (max-width: 1440px) {
+  .preview {
+    border-radius: 26% 26% 52% 52%/0% 0% 10% 10%;
+  }
+}
+@media (max-width: 768px) {
+  .preview {
+    border-radius: 26% 26% 52% 52%/0% 0% 5% 5%;
+  }
+}
 
 .preview__content {
   display: flex;
@@ -459,6 +469,16 @@ select:-webkit-autofill:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef3d8",endColorstr="#fff4d9",GradientType=1);
   border-radius: 50% 50% 50% 50%/10% 10% 10% 10%;
 }
+@media (max-width: 1440px) {
+  .our-courses {
+    border-radius: 30% 30% 30% 30%/2% 2% 2% 2%;
+  }
+}
+@media (max-width: 768px) {
+  .our-courses {
+    border-radius: 20% 20% 20% 20%/1% 1% 1% 1%;
+  }
+}
 .our-courses .banner {
   margin: 0 auto 170px;
 }
@@ -526,7 +546,17 @@ select:-webkit-autofill:focus {
   background: rgb(254, 243, 216);
   background: linear-gradient(250deg, rgb(254, 243, 216) 0%, rgb(255, 230, 169) 50%, rgb(255, 244, 217) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef3d8",endColorstr="#fff4d9",GradientType=1);
-  border-radius: 26% 26% 48% 52%/15% 15% 0% 0%;
+  border-radius: 26% 26% 52% 52%/15% 15% 0% 0%;
+}
+@media (max-width: 1440px) {
+  .footer {
+    border-radius: 26% 26% 52% 52%/5% 5% 0% 0%;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    border-radius: 26% 26% 52% 52%/2% 2% 0% 0%;
+  }
 }
 .footer .wrapper-logo {
   margin-bottom: 21px;

@@ -7,8 +7,14 @@
     background: linear-gradient(250deg, rgba(254,243,216,1) 0%, rgba(255,230,169,1) 50%, rgba(255,244,217,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef3d8",endColorstr="#fff4d9",GradientType=1);
     border-radius: 50% 50% 50% 50% / 10% 10% 10% 10%;
-
     
+    @media (max-width: 1440px) {
+        border-radius: 30% 30% 30% 30% / 2% 2% 2% 2%;
+    }
+    @media (max-width: 768px) {
+        border-radius: 20% 20% 20% 20% / 1% 1% 1% 1%;
+    }
+
     .banner{
         margin: 0 auto 170px;
     }
