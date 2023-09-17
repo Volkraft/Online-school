@@ -36,6 +36,9 @@
     &--black{
         color: $colorContextText;
     }
+    @media (max-width: 1440px) {
+    font-size: 40px;
+    }
 }
 .section-title__color-part{
     &--color-one{

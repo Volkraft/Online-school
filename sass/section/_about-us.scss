@@ -98,6 +98,10 @@
     width: 525px;
     li:not(:last-child){
         margin-bottom: 30px;
+        
+        @media (max-width: 1440px) {
+        margin-bottom: 20px;
+        }
     }
 }
 .about-us__wrapper-link {

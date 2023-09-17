@@ -455,6 +455,11 @@ select:-webkit-autofill:focus {
 .advantages-list li:not(:last-child) {
   margin-bottom: 30px;
 }
+@media (max-width: 1440px) {
+  .advantages-list li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 
 .advantages-list__item {
   display: flex;
@@ -702,6 +707,11 @@ select:-webkit-autofill:focus {
 }
 .section-title--black {
   color: #393939;
+}
+@media (max-width: 1440px) {
+  .section-title {
+    font-size: 40px;
+  }
 }
 
 .section-title__color-part--color-one {
