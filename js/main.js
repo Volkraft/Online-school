@@ -98,6 +98,7 @@ $('.reviews-slider').slick({
     })
 
     function parallax(){
+        if (window.innerWidth >= 1440) {
         const preview = document.querySelector('.preview');
         const initialX = preview.offsetLeft + preview.offsetWidth / 2;
         const initialY = preview.offsetTop + preview.offsetHeight / 2;
@@ -201,7 +202,7 @@ $('.reviews-slider').slick({
                 y: mouseY * 0.03, 
                 ease: 'power2.out' 
                 },'<');
-    })
+    })}
         
 }
 parallax()
@@ -210,7 +211,7 @@ function rotatePreview(){
 '.preview__avatar-cirlces--big',
 {
     rotation: 360,
-    duration: 10,
+    duration: 30,
     repeat: -1,
     ease: "linear"
     },'<');
@@ -219,7 +220,7 @@ gsap.to(
     '.preview__avatar-cirlces--meduim',
     {
         rotation: -360,
-        duration: 10,
+        duration: 30,
         repeat: -1,
         ease: "linear"
         },'<');
@@ -228,7 +229,7 @@ gsap.to(
     '.preview__avatar-cirlces--small',
     {
         rotation: 360,
-        duration: 10,
+        duration: 30,
         repeat: -1,
         ease: "linear"
         },'<');
@@ -237,7 +238,7 @@ gsap.to(
     '.preview__avatar-cirlces--very-small',
     {
         rotation: -360,
-        duration: 10,
+        duration: 30,
         repeat: -1,
         ease: "linear"
         },'<');

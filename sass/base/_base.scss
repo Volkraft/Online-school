@@ -55,18 +55,8 @@ footer{
     }
 
     /* Tablet */
-    @media (max-width: 1199px) {
-        width: 900px;
-    }
-
-    /* Mobile */
-    @media (max-width: 899px) {
-        width: 768px;
-    }
-
-    /* Mobile XS */
-    @media (max-width: 767px) {
-        width: 320px;
+    @media (max-width: 1440px) {
+    width: 1024px;
     }
 }
 
