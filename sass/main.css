@@ -754,7 +754,7 @@ select:-webkit-autofill:focus {
 
 .wrapper-banner {
   position: relative;
-  width: 1258px;
+  max-width: 1258px;
   margin: 0 auto 170px;
 }
 
@@ -764,7 +764,7 @@ select:-webkit-autofill:focus {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 60px;
-  width: 1258px;
+  max-width: 1258px;
   overflow: hidden;
   background-color: #F5B920;
   border-radius: 47px;
@@ -788,7 +788,7 @@ select:-webkit-autofill:focus {
 }
 
 .banner__description {
-  width: 905px;
+  max-width: 905px;
   padding-bottom: 43px;
   color: #FFF;
   font-size: 23px;
@@ -957,6 +957,7 @@ select:-webkit-autofill:focus {
 
 .reviews-slider__item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   -moz-column-gap: 15px;
        column-gap: 15px;
@@ -990,6 +991,11 @@ select:-webkit-autofill:focus {
 .reviews-slider__text {
   font-size: 12px;
   font-weight: 400;
+}
+@media (max-width: 1440px) {
+  .reviews-slider__text {
+    font-size: 18px;
+  }
 }
 
 .slick-list {
@@ -1048,6 +1054,18 @@ select:-webkit-autofill:focus {
 .slick-center .reviews-slider__avatar {
   transition: border-color 0.8s;
   border-color: white;
+}
+
+@media (max-width: 1440px) {
+  .slick-active {
+    background-color: #00BDED;
+    color: white;
+    filter: blur(0px);
+  }
+  .slick-active .reviews-slider__avatar {
+    transition: border-color 0.8s;
+    border-color: white;
+  }
 }
 
 .social-list {

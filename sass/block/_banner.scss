@@ -1,6 +1,6 @@
 .wrapper-banner{
     position: relative;
-    width: 1258px;
+    max-width: 1258px;
     margin: 0 auto 170px;
 }
 .banner{
@@ -9,7 +9,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 60px;
-    width: 1258px;
+    max-width: 1258px;
     overflow: hidden;
     background-color: $colorCardLinks;
     border-radius: 47px;
@@ -31,7 +31,7 @@
     font-weight: 700;
 }
 .banner__description {
-    width: 905px;
+    max-width: 905px;
     padding-bottom: 43px;
     color: $colorTextSlider;
     font-size: 23px;

@@ -16,7 +16,19 @@ $('.reviews-slider').slick({
     <path d="M36.5738 26.5022L11.7041 3.78638C10.8359 2.92041 10.8359 1.51545 11.7041 0.649478C12.5722 -0.216493 13.9816 -0.216493 14.8498 0.649478L41.3145 24.8211C41.7784 25.2828 41.975 25.8969 41.9441 26.5C41.975 27.1053 41.7784 27.7171 41.3145 28.1789L14.8498 52.3505C13.9816 53.2164 12.5722 53.2164 11.7041 52.3505C10.8359 51.4845 10.8359 50.0795 11.7041 49.2136L36.5738 26.5022Z" fill="black"/>
     </svg>    
     </div>`,
-    });
+    responsive: [
+        {
+        breakpoint: 1441,
+        settings: {
+            speed: 2000,
+            slidesToShow: 1,
+            infinite: true,
+            centerMode: false,
+            touchThreshold: 100,
+                }
+        }
+    ]});
+    
     // gsap
     const timelinePreview = gsap.timeline({})
 
@@ -98,7 +110,7 @@ $('.reviews-slider').slick({
     })
 
     function parallax(){
-        if (window.innerWidth >= 1440) {
+        if (window.innerWidth >= 1023) {
         const preview = document.querySelector('.preview');
         const initialX = preview.offsetLeft + preview.offsetWidth / 2;
         const initialY = preview.offsetTop + preview.offsetHeight / 2;
