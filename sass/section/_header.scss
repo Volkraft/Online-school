@@ -9,18 +9,24 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
-    .wrapper-logo{
-        margin-right: 196px;
+    // .wrapper-logo{
+    //     margin-right: 196px;
+    // }
+
+
+    *{
+        flex-shrink: 0;
     }
 }
 .header__content{
+    width: 100%;
+    max-width: 1262px;
+    justify-content: space-between;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    max-width: 1262px;
 }
 .header__navigation{
-    margin-right: auto;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.22;

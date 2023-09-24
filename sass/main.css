@@ -190,19 +190,20 @@ select:-webkit-autofill:focus {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.header .wrapper-logo {
-  margin-right: 196px;
+.header * {
+  flex-shrink: 0;
 }
 
 .header__content {
+  width: 100%;
+  max-width: 1262px;
+  justify-content: space-between;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  max-width: 1262px;
 }
 
 .header__navigation {
-  margin-right: auto;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
@@ -508,6 +509,11 @@ select:-webkit-autofill:focus {
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
+@media (max-width: 1440px) {
+  .our-courses__row-cards {
+    justify-content: center;
+  }
+}
 
 .reviews {
   padding-top: 50px;
@@ -584,6 +590,12 @@ select:-webkit-autofill:focus {
        column-gap: 150px;
   padding-bottom: 50px;
 }
+@media (max-width: 1440px) {
+  .footer__top {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
 
 .footer__item {
   max-width: 298px;
@@ -611,10 +623,16 @@ select:-webkit-autofill:focus {
 }
 
 .footer__bottom {
-  display: flex;
-  justify-content: center;
-  -moz-column-gap: 670px;
-       column-gap: 670px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 83.5%;
+  margin: 0 auto;
+}
+@media (max-width: 1440px) {
+  .footer__bottom {
+    width: 93%;
+    margin: 0 auto;
+  }
 }
 
 .contact-links__item {
@@ -786,9 +804,14 @@ select:-webkit-autofill:focus {
   font-size: 57px;
   font-weight: 700;
 }
+@media (max-width: 1440px) {
+  .banner__title {
+    font-size: 40px;
+  }
+}
 
 .banner__description {
-  max-width: 905px;
+  max-width: 80%;
   padding-bottom: 43px;
   color: #FFF;
   font-size: 23px;
@@ -830,6 +853,11 @@ select:-webkit-autofill:focus {
   bottom: 35%;
   right: -6%;
   filter: drop-shadow(0 0 20px #FF668A);
+}
+@media (max-width: 1440px) {
+  .banner__icon--first {
+    right: -4%;
+  }
 }
 .banner__icon--second {
   bottom: 40%;

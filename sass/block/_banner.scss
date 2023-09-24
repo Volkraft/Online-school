@@ -29,9 +29,12 @@
     color: $colorTextSlider;
     font-size: 57px;
     font-weight: 700;
+    @media (max-width: 1440px) {
+    font-size: 40px;
+    }
 }
 .banner__description {
-    max-width: 905px;
+    max-width: 80%;
     padding-bottom: 43px;
     color: $colorTextSlider;
     font-size: 23px;
@@ -71,6 +74,9 @@
         bottom: 35%;
         right: -6%;
         filter: drop-shadow(0 0 20px #FF668A);
+        @media (max-width: 1440px) {
+        right: -4%;
+        }
     }
     &--second{
         bottom: 40%;
