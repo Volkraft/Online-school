@@ -9,11 +9,11 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
-    // .wrapper-logo{
-    //     margin-right: 196px;
-    // }
-
-
+    .container{
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
     *{
         flex-shrink: 0;
     }
@@ -25,6 +25,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    
 }
 .header__navigation{
     font-weight: 400;
