@@ -9,13 +9,11 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
-    .container{
-        @media (max-width: 1024px) {
-            display: none;
+    @media (max-width: 1024px) {
+        backdrop-filter: none;
+        .container{
+        display: none;
         }
-    }
-    *{
-        flex-shrink: 0;
     }
 }
 .header__content{
@@ -51,4 +49,18 @@
         font-size: 16px;
         line-height: 1.25;
     }
+}
+.header__mobile-navigation {
+    display: none;
+    
+    @media (max-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    }
+}
+.header__mobile-action{
+    display: flex;
+    z-index: 2;
+    column-gap: 30px;
 }
