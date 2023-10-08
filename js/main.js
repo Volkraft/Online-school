@@ -304,3 +304,16 @@ function rotateAboutUsFirst(){
                 },'<');
 }
 rotateAboutUsFirst()
+
+// regular script
+
+const burger = document.querySelector('.burger')
+const mobileMenu = document.querySelector('.mobile__navigation')
+const shadow = document.querySelectorAll('.navigation-mobile__shadow')
+
+burger.addEventListener('click', ()=>{
+    mobileMenu.classList.toggle('open')
+    shadow.forEach((shadow)=>{
+        shadow.classList.toggle('active')
+    })
+})
