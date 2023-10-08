@@ -11,6 +11,7 @@
         text-align: center;
         backdrop-filter: blur(6px);
         font-size: 22px; 
+        transition: transform 0.7s 0.5s;
         z-index: 1;
         
         &.open{
@@ -27,7 +28,7 @@
     
     &--first{ 
     background-color: rgba(255, 102, 138, 0.8);
-    
+    transition: transform 0.5s 0.8s, background-color 2s;
         
         &.active{
             transition: transform 0.6s, background-color 1s;
@@ -38,6 +39,8 @@
     
     &--second{ 
     background-color: rgba(0, 204, 255, 0.8);
+    transition: transform 0.7s 0.9s, background-color 4s;
+    
 
         &.active{
             transition: transform 0.6s 0.2s, background-color 1.3s;

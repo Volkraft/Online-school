@@ -317,3 +317,11 @@ burger.addEventListener('click', ()=>{
         shadow.classList.toggle('active')
     })
 })
+
+const linksMenu = mobileMenu.querySelectorAll('a')
+
+linksMenu.forEach((link)=>{
+    link.addEventListener('click', ()=>{
+        mobileMenu.classList.remove('open')
+    })
+})
