@@ -1177,12 +1177,33 @@ select:-webkit-autofill:focus {
   height: 53px;
   border-radius: 50%;
   border: 5px solid #F5B920;
+  transition: width 1s, height 1s;
 }
 .burger--contact {
   background-color: transparent;
 }
+.burger.active::before {
+  width: 0;
+  height: 0;
+  transition: width 1s, height 1s;
+}
+.burger.active .burger-line {
+  background-color: rgba(245, 245, 220, 0);
+  transition: background-color 0.5s 0s;
+}
+.burger.active .burger-line::before {
+  top: 0;
+  transition: top 0.5s, transform 0.5s 0.5s;
+  transform: rotate(-45deg);
+}
+.burger.active .burger-line::after {
+  top: 0;
+  transition: top 0.5s, transform 0.5s 0.5s;
+  transform: rotate(45deg);
+}
 
 .burger-line {
+  transition: background-color 0.5s 0s;
   position: absolute;
   display: inline-block;
   width: 25px;
@@ -1199,6 +1220,7 @@ select:-webkit-autofill:focus {
   height: 2px;
   background-color: white;
   border-radius: 5px;
+  transition: transform 0.5s, top 0.5s 0.5s;
 }
 .burger-line::after {
   top: 6px;

@@ -316,6 +316,8 @@ burger.addEventListener('click', ()=>{
     shadow.forEach((shadow)=>{
         shadow.classList.toggle('active')
     })
+    document.body.classList.toggle('active')    
+    burger.classList.toggle('active')
 })
 
 const linksMenu = mobileMenu.querySelectorAll('a')
@@ -323,5 +325,7 @@ const linksMenu = mobileMenu.querySelectorAll('a')
 linksMenu.forEach((link)=>{
     link.addEventListener('click', ()=>{
         mobileMenu.classList.remove('open')
+        document.body.classList.remove('active')
     })
 })
+
