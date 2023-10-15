@@ -28,6 +28,10 @@
     @media (max-width: 1440px) {
     column-gap: 20px;
     }
+    @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    }
 }
 .footer__item {
     max-width: 298px;

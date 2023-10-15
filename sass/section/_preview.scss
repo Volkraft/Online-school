@@ -32,6 +32,10 @@
 }
 .preview__info {
     max-width: 450px;
+
+    @media (max-width: 1024px) {
+    max-width: 665px;
+    }
 }
 .preview__description {
     font-weight: 400;
@@ -48,6 +52,9 @@
 
     @media (max-width: 1440px) {
     width: 500px;
+    }
+    @media (max-width: 1024px) {
+    display: none;
     }
     
 }

@@ -77,15 +77,25 @@
         @media (max-width: 1440px) {
         right: -4%;
         }
+        @media (max-width: 1024px) {
+            display: none;
+        }
     }
     &--second{
         bottom: 40%;
         right: 10%;
         filter: drop-shadow(0 0 20px #FFFFFF);
+        @media (max-width: 1024px) {
+            bottom: 30%;
+            right: 5%;
+        }
     }
     &--last{
         bottom: 0;
         right: 15%;
         filter: drop-shadow(0 0 20px #B0EFFF);
+        @media (max-width: 1024px) {
+            right: 23%;
+        }
     }
 }

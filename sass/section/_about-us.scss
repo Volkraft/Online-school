@@ -8,11 +8,11 @@
 .about-us__content {
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     column-gap: 29px;
-    
-    &--second{
 
+    &--second{
+        
         flex-direction: row-reverse;
         
         .about-us__avatar-cirlces{
@@ -20,7 +20,7 @@
             top: 0;
             left: 0;
         
-        &--big{
+            &--big{
             width: 100%; 
             transform: translate(1%, 6%);
         }
@@ -35,12 +35,19 @@
             transform: translate(36%, 45%);
         }
     }
+}
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        row-gap: 40px;
     }
+
 }
 .about-us__avatar {
     position: relative;
     width: 590px;
     height: 590px;
+
 }
 .about-us__avatar-img {
     position: absolute;

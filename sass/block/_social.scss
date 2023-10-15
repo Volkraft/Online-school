@@ -1,6 +1,10 @@
 .social-list{
     display: flex;
     column-gap: 20px;
+
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
 }
 .social-link{
     width: 56px;

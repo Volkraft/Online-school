@@ -14,8 +14,15 @@
 .contacts__row {
     display: flex;
     justify-content: center;
+
     column-gap: 110px;
 
+    @media (max-width: 1024px) {
+        align-items: center;
+        text-align: center;
+    flex-direction: column;
+    row-gap: 30px;
+    }
 }
 .contacts__info {
     max-width: 400px;

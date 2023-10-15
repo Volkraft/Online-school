@@ -83,7 +83,7 @@
     padding-left: 5px;
     right: 0;
 }
-.slick-slide{
+.reviews-slider .slick-slide{
     transition: filter 0.8s, background-color 0.8s, color 0.8s,  ;
     filter: blur(5px);
 }
@@ -97,7 +97,7 @@
         border-color: #ffff;
     }
 }
-.slick-active{
+.reviews-slider .slick-active{
     @media (max-width: 1440px) {
         background-color: #00BDED;
         color: white;
