@@ -21,6 +21,12 @@
             }
         }
     }
+    @media (max-width: 1024px) {
+        flex-shrink: 0;
+        min-width: 400px !important;
+        max-width: 400px !important;
+        width: 400px !important;
+    }
 }
 .card-activities__content {
     display: flex;

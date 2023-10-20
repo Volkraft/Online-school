@@ -14,6 +14,7 @@
     }
     @media (max-width: 768px) {
         border-radius: 26% 26% 52% 52% / 0% 0% 5% 5%;
+        padding-bottom: 10px;
     }
 }
 .preview__content {
@@ -36,6 +37,9 @@
     @media (max-width: 1024px) {
     max-width: 665px;
     }
+    @media (max-width: 768px) {
+        max-width: 300px;
+    }
 }
 .preview__description {
     font-weight: 400;
@@ -43,6 +47,11 @@
     line-height: 1.3;
     color: $colorContextText;
     margin-bottom: 65px;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
 }
 .preview__avatar {
     position: relative;

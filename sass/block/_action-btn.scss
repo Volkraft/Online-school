@@ -1,5 +1,7 @@
 .wrapper-action-btn {
-
+    @media (max-width: 768px) {
+        margin-bottom: 70px;
+    }
 }
 .action-btn {
     overflow: hidden;
@@ -44,5 +46,10 @@
         width: 100%;
         height: 100%;
         background-color: rgba(255, 255, 255, 0.24);
+    }
+    @media (max-width: 768px) {
+    padding-left: 54px;
+    padding-right: 54px;
+    line-height: 59px;
     }
 }

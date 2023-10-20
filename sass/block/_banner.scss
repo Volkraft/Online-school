@@ -13,6 +13,13 @@
     overflow: hidden;
     background-color: $colorCardLinks;
     border-radius: 47px;
+
+    @media (max-width: 768px) {
+        padding-top: 35px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+    }
 }
 .banner__shadow-circles{
     position: absolute;
@@ -30,7 +37,10 @@
     font-size: 57px;
     font-weight: 700;
     @media (max-width: 1440px) {
-    font-size: 40px;
+    font-size: 48px;
+    }
+    @media (max-width: 768px) {
+    line-height: 110.3%;
     }
 }
 .banner__description {
@@ -39,6 +49,11 @@
     color: $colorTextSlider;
     font-size: 23px;
     line-height: 30px;
+    @media (max-width: 768px) {
+        max-width: 307px;
+        font-size: 20px;
+        line-height: normal;
+    }
 }
 .banner__circles {
     position: absolute;
@@ -46,6 +61,13 @@
     right: -9%;
     width: 384.931px;
     height: 384.931px;
+
+    @media (max-width: 768px) {
+        bottom: -18%;
+        right: -28%;
+    width: 271.201px;
+    height: 271.201px;
+    }
 }
 .banner__circles-item {
     position: absolute;
@@ -56,14 +78,29 @@
     &--big{
         width: 384.931px;
         height: 384.931px;
+
+        @media (max-width: 768px) {
+            width: 271.201px;
+            height: 271.201px;
+        }
     }
     &--medium{
         width: 263.803px;
         height: 263.803px;
+
+        @media (max-width: 768px) {
+        width: 185.862px;
+        height: 185.862px;
+        }
     }
     &--small{
         width: 137.107px;
         height: 137.107px;
+
+        @media (max-width: 768px) {
+            width: 96.598px;
+            height: 96.598px;
+        }
     }
 }
 .banner__icon{
@@ -89,6 +126,13 @@
             bottom: 30%;
             right: 5%;
         }
+        @media (max-width: 768px) {
+            bottom: 0;
+            right: 22%;
+            width: 85px;
+            height: 85px;
+            transform: rotate(-27.821deg);
+        }
     }
     &--last{
         bottom: 0;
@@ -96,6 +140,13 @@
         filter: drop-shadow(0 0 20px #B0EFFF);
         @media (max-width: 1024px) {
             right: 23%;
+        }
+        @media (max-width: 768px) {
+            bottom: 17%;
+            right: -3%;
+            width: 100px;
+            height: 100px;
+            transform: rotate(-5deg);
         }
     }
 }

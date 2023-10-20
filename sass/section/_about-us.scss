@@ -1,6 +1,10 @@
 .about-us {
     padding-bottom: 36px;
     padding-top: 60px;
+    @media (max-width: 768px) {
+    padding-bottom: 10px;
+    padding-top: 30px;
+    }
 }
 .aims {
 
@@ -47,7 +51,10 @@
     position: relative;
     width: 590px;
     height: 590px;
-
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+    }
 }
 .about-us__avatar-img {
     position: absolute;
@@ -85,10 +92,13 @@
     }
 }
 .about-us__info {
-    width: 601px;
+    max-width: 601px;
 }
 .about-us__wrapper-title {
     margin-bottom: 33px;
+    @media (max-width: 768px) {
+    display: none;
+    }
 
 }
 .about-us__description {
@@ -100,15 +110,17 @@
     p:not(:last-child){
         margin-bottom: 11px;
     }
+    
 }
 .advantages-list{
-    width: 525px;
+    max-width: 525px;
     li:not(:last-child){
         margin-bottom: 30px;
         
         @media (max-width: 1440px) {
         margin-bottom: 20px;
         }
+        
     }
 }
 .about-us__wrapper-link {
@@ -124,4 +136,5 @@
     width: 17px;
     height: 17px;
     background-image: url("/img/eclipse.svg");
+    margin-top: 5px;
 }
