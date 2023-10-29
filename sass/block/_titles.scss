@@ -49,13 +49,13 @@
     font-size: 40px;
     }
     @media (max-width: 768px) {
-        color: $colorContextText;
+        color: $colorContextText; 
         text-align: center;
     }
 }
 .section-title__color-part{
-    &--color-one{
-        color: $colorSectionTitle;
+    color: $colorSectionTitle;
+    &--color-two{
         @media (max-width: 768px) {
             color: #FF577F;
         }

@@ -1,6 +1,9 @@
 .wrapper-action-btn {
     @media (max-width: 768px) {
-        margin-bottom: 70px;
+        margin-bottom: 110px;
+    }
+    @media (max-width: 425px) {
+        margin-bottom: 150px;
     }
 }
 .action-btn {

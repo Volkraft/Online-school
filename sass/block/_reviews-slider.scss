@@ -6,14 +6,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    column-gap: 15px;
+    // column-gap: 15px;
     padding: 10px;
     margin: 60px;
     width: 391px;
     height: 249px;
     border-radius: 47px;
     background: rgba(0, 189, 237, 0.12);
-    
+    @media (max-width: 425px) {
+        height: 70vh;
+        margin: 20px;
+        row-gap: 27px;
+    }
 
 }
 .reviews-slider__avatar {
@@ -26,13 +30,21 @@
     align-items: center;
     border: 3px solid transparent;
     flex-shrink: 0;
-    
+    @media (max-width: 425px) {
+        width: 150px;
+        height: 150px;
+        border-width: 7px;
+    }
 }
 .reviews-slider__holder-img{
     overflow: hidden;
     border-radius: 50%;
     width: 71px;
     height: 71px;
+    @media (max-width: 425px) {
+        width: 100px;
+        height: 100px;
+    }
 }
 .reviews-slider__text {
     font-size: 12px;
@@ -64,6 +76,10 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    @media (max-width: 425px) {
+        top: 88%;
+        background-color: $colorTextSlider;
+    }
 
     svg{
         width: 35px;
@@ -72,16 +88,25 @@
 
     path{
         fill: #ffff;
+        @media (max-width: 425px) {
+            fill: #00BDED;
+        }
     }
 
 }
 .slick-prev{
     padding-right: 5px;
     left: 0;
+    @media (max-width: 425px) {
+        left: 30px;
+    }
 }
 .slick-next{
     padding-left: 5px;
     right: 0;
+    @media (max-width: 425px) {
+        right: 30px;
+    }
 }
 .reviews-slider .slick-slide{
     transition: filter 0.8s, background-color 0.8s, color 0.8s,  ;

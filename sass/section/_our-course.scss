@@ -25,12 +25,19 @@
     &__row-cards{
         margin: 0 auto;
         display: flex;
-        flex-wrap: wrap;
         row-gap: 78px;
         column-gap: 40px;
+        flex-wrap: wrap;
         
         @media (max-width: 1440px) {
         justify-content: center;
+        }
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
         }
     }
 }

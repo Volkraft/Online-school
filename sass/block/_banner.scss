@@ -50,7 +50,7 @@
     font-size: 23px;
     line-height: 30px;
     @media (max-width: 768px) {
-        max-width: 307px;
+        max-width: 100%;
         font-size: 20px;
         line-height: normal;
     }
@@ -64,9 +64,13 @@
 
     @media (max-width: 768px) {
         bottom: -18%;
-        right: -28%;
-    width: 271.201px;
-    height: 271.201px;
+        right: -10%;
+        width: 271.201px;
+        height: 271.201px;
+    }
+    @media (max-width: 425px) {
+        bottom: -18%;
+        right: -25%;
     }
 }
 .banner__circles-item {
@@ -131,7 +135,11 @@
             right: 22%;
             width: 85px;
             height: 85px;
-            transform: rotate(-27.821deg);
+            transform: rotate(-45deg);
+        }
+        @media (max-width: 425px) {
+            bottom: 0;
+            right: 20%;
         }
     }
     &--last{
@@ -146,7 +154,11 @@
             right: -3%;
             width: 100px;
             height: 100px;
-            transform: rotate(-5deg);
+            transform: rotate(15deg);
+        }
+        @media (max-width: 425px) {
+            bottom: 16%;
+            right: 1%;
         }
     }
 }
