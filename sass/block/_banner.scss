@@ -23,11 +23,18 @@
 }
 .banner__shadow-circles{
     position: absolute;
-    bottom: -35%;
+    bottom: 0;
     right: 35%;
     display: inline-block;
-    // width: 291px;
-    // height: 143px;
+    width: 291px;
+    height: 143px;
+    background-size: cover;
+    background-image: url("../img/circle-shadow-mobile.svg");
+    @media (max-width: 425px) {
+        bottom: 50%;
+        right: -18%;
+        transform: rotate(-90deg);
+    }
 }
 .banner__wrapper-title {
     padding-bottom: 27px;

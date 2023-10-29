@@ -547,7 +547,7 @@ select:-webkit-autofill:focus {
   flex-shrink: 0;
   width: 17px;
   height: 17px;
-  background-image: url("/img/eclipse.svg");
+  background-image: url("../img/eclipse.svg");
   margin-top: 5px;
 }
 
@@ -960,9 +960,20 @@ select:-webkit-autofill:focus {
 
 .banner__shadow-circles {
   position: absolute;
-  bottom: -35%;
+  bottom: 0;
   right: 35%;
   display: inline-block;
+  width: 291px;
+  height: 143px;
+  background-size: cover;
+  background-image: url("../img/circle-shadow-mobile.svg");
+}
+@media (max-width: 425px) {
+  .banner__shadow-circles {
+    bottom: 50%;
+    right: -18%;
+    transform: rotate(-90deg);
+  }
 }
 
 .banner__wrapper-title {
@@ -1383,7 +1394,7 @@ select:-webkit-autofill:focus {
   }
 }
 
-.reviews-slider .slick-slide {
+.slick-slide {
   transition: filter 0.8s, background-color 0.8s, color 0.8s;
   filter: blur(5px);
 }
