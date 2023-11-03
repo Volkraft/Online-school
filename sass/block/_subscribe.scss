@@ -14,5 +14,8 @@
         color: $colorTextSlider;
         border-radius: 30px;
         padding: 14px 20px;
+        @media (max-width: 425px) {
+            right: -25px;
+        }
     }
 }

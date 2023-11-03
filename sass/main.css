@@ -1455,6 +1455,11 @@ select:-webkit-autofill:focus {
   border-radius: 30px;
   padding: 14px 20px;
 }
+@media (max-width: 425px) {
+  .subscribe input[type=submit] {
+    right: -25px;
+  }
+}
 
 .wrapper-logo {
   z-index: 2;

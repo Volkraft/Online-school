@@ -18,7 +18,7 @@ $('.reviews-slider').slick({
     </div>`,
     responsive: [
         {
-        breakpoint: 769,
+        breakpoint: 1441,
         settings: {
             speed: 2000,
             slidesToShow: 1,
