@@ -4,7 +4,8 @@
         padding: 14px 11px ;
         border-radius: 30px;
         background-color: $colorTextSlider;
-        filter: drop-shadow(0px 8px 24px rgba(226, 192, 117, 0.6));
+        -webkit-filter: drop-shadow(0px 8px 24px rgba(226, 192, 117, 0.6));
+                filter: drop-shadow(0px 8px 24px rgba(226, 192, 117, 0.6));
     }
     input[type=submit]{
         position: absolute;
@@ -14,6 +15,8 @@
         color: $colorTextSlider;
         border-radius: 30px;
         padding: 14px 20px;
+        min-width: 83px;
+        min-height: 49px;
         @media (max-width: 425px) {
             right: -25px;
         }

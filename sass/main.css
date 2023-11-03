@@ -1454,6 +1454,8 @@ select:-webkit-autofill:focus {
   color: #FFF;
   border-radius: 30px;
   padding: 14px 20px;
+  min-width: 83px;
+  min-height: 49px;
 }
 @media (max-width: 425px) {
   .subscribe input[type=submit] {
